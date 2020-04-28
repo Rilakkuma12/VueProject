@@ -1,13 +1,15 @@
 <!--展示给用户，相当于v-->
 <template>
     <div id="app">
-
-        <navMenu></navMenu>
-
-    <!--    <img alt="Vue logo" src="./assets/logo.png">-->
-    <!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
-    <!--    <greeting></greeting>-->
-        <login></login>
+      <img alt="Vue logo" src="./assets/logo.png">
+      <ul>
+        <li><router-link to="/">主页</router-link></li>
+        <li><router-link to="/greeting">问候</router-link></li>
+        <li><router-link to="/login">登录</router-link></li>
+        <li><router-link to="/project_list">项目列表</router-link></li>
+      </ul>
+      <!-- 展示路由 -->
+      <router-view></router-view>
     </div>
 </template>
 
@@ -15,8 +17,8 @@
   //导入子组件
   // import HelloWorld from './components/HelloWorld.vue'
   // import greeting from "./components/greeting"
-  import login from "./components/Login"
-  import navMenu from "./components/NavMenu"
+  // import login from "./components/Login"
+  // import navMenu from "./components/NavMenu"
 
 export default {
   name: 'App',
@@ -24,7 +26,7 @@ export default {
     // HelloWorld,
     // eslint-disable-next-line vue/no-unused-components
     // greeting,
-    login, navMenu,
+    // login, navMenu,
 
   }
 }

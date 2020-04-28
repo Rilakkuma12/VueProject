@@ -6,12 +6,13 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 //导入router
-import VueRouter from "vue-router";
-Vue.use(VueRouter)
+import router from "./router";
+Vue.use(router)
 
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
 
