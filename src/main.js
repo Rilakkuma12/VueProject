@@ -9,6 +9,9 @@ Vue.use(ElementUI);
 import router from "./router";
 Vue.use(router)
 
+//导入axios
+// import axios from 'axios'
+
 Vue.config.productionTip = false
 
 new Vue({
