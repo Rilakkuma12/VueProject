@@ -7,7 +7,7 @@ import greeting from '../components/greeting'
 import HelloWorld from '../components/HelloWorld'
 import Login from '../components/Login'
 import ProjectList from '../components/ProjectList'
-// import NavMenu from '../components/NavMenu'
+import NavMenu from '../components/NavMenu'
 
 // 创建路由
 const router = new VueRouter({
@@ -16,7 +16,8 @@ const router = new VueRouter({
       { path: '/', component: HelloWorld, name:'helloworld'},
       { path: '/greeting', component: greeting, name:'greeting'},
       { path: '/login', component: Login, name:'login'},
-      { path: '/project_list', component: ProjectList, name:'project_list'}
+      { path: '/project_list', component: ProjectList, name:'project_list'},
+      { path: '/nav_menu', component: NavMenu, name:'nav_menu'}
     ]
   })
 

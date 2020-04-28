@@ -7,6 +7,7 @@
         <li><router-link to="/greeting">问候</router-link></li>
         <li><router-link to="/login">登录</router-link></li>
         <li><router-link to="/project_list">项目列表</router-link></li>
+        <li><router-link to="/menu">菜单栏</router-link></li>
       </ul>
       <!-- 展示路由 -->
       <router-view></router-view>
